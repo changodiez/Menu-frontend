@@ -1,16 +1,17 @@
 import React from "react";
 import mobileqr from "./../Assets/mobil-qr.png";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from 'react-router-dom'
 
 export default function MenuQr() {
-  const scrollToX = () => {
-    const carrouselContainer = document.getElementById("carrousel-container");
-    if (carrouselContainer.scrollLeft < window.innerWidth * 1.7) {
-      carrouselContainer.scrollBy(window.innerWidth, 0);
-    } else {
+  
+  const scrollToX =()=>{
+    const carrouselContainer = document.getElementById('carrousel-container');
+   if (carrouselContainer.scrollLeft < window.innerWidth * 1.7){    
+     carrouselContainer.scrollBy(window.innerWidth, 0);   
+    } else{
       carrouselContainer.scrollBy(-1 * window.innerWidth * 2, 0);
-    }
-  };
+   }
+  }
 
   return (
     <section id="MenuQR" className="MenuQR">
@@ -33,13 +34,7 @@ export default function MenuQr() {
                   nuestro planeta.
                 </p>
               </div>
-
-              {
-                window.innerWidth > 500
-                ?   <img className="img-qr" src={mobileqr} alt="" />
-                :   <img className="img-qr-test" src={mobileqr} alt="" />
-              }
-            
+              <img className="img-qr" src={mobileqr} alt="" />{" "}
             </div>
             <div className="buttons-caption-qr-container">
               <h1 className="header-QR-mobile">
@@ -52,6 +47,7 @@ export default function MenuQr() {
                 COVID-19. Conoce màs sobre la nueva opciòn que además cuida
                 nuestro planeta.
               </p>
+            
             </div>
           </div>
           <div className="section-qr-container ">
@@ -85,7 +81,7 @@ export default function MenuQr() {
                   de comida que les gusten en su idioma.
                 </i>
               </p>
-              <h4>Mauri, de Polito. </h4>
+              <h6>Mauri, de Polito. </h6>
             </div>
             <div className="buttons-caption-qr-container">
               <h1 className="header-QR">

@@ -6,6 +6,7 @@ import MenuQr from "./MenuQr.jsx"
 import Contact from "./Contact.jsx"
 import Services from "./Services.jsx"
 import "./../../src/Home.css";
+
 const param = window.location.pathname.length > 2;
 
 
@@ -19,6 +20,7 @@ const Home = () => {
     <div className="home">
       <Navbar setNavAct={()=>setNavActFunction(navAct)} />
       <div style={{minHeight:'100vh'}}>
+
       {
        !param && navAct
         ? <Sketch />
