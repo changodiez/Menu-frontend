@@ -1,6 +1,6 @@
 import React from "react";
 import mobileqr from "./../Assets/mobil-qr.png";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 export default function MenuQr() {
   const scrollToX = () => {
@@ -20,7 +20,7 @@ export default function MenuQr() {
       <Router>
         <div id="carrousel-container" className="carrousel-container">
           <div className="section-qr-container ">
-            <div className="img-qr-container"> <a href="https://www.collabo.studio/larovira"><div className="QRbutton" >Ver DEMO</div></a>
+            <div className="img-qr-container"> <a href="https://www.collabo.studio/larovira"><div className="QRbutton" ><span>Ver DEMO</span></div></a>
             
               {" "}
               <div className="QR-desktop">
